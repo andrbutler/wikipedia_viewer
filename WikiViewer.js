@@ -15,7 +15,7 @@ $(document).ready(function(){
 		var query = /*'tiger';*/document.getElementById('search').value;
 		$('#sites').empty();
 		$.ajax({
-                url: 'http://en.wikipedia.org/w/api.php',
+                url: 'https://en.wikipedia.org/w/api.php',
                 data: { action: 'opensearch', search: query, format: 'json' },
                 dataType: 'jsonp',
                 success: processResult
